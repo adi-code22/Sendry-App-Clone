@@ -11,12 +11,9 @@ class _SignUpState extends State<SignUp> {
   GlobalKey<FormState> formkey = GlobalKey<FormState>();
   String _email = "";
   String _password = "";
+
   @override
   Widget build(BuildContext context) {
-    var h = MediaQuery.of(context).size.height;
-    var sf = MediaQuery.of(context).textScaleFactor;
-    print(h);
-    var w = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -27,12 +24,12 @@ class _SignUpState extends State<SignUp> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(25.0),
+                    padding: new EdgeInsets.only(top: 0.05.sh),
                     child: Text(
                       "S E N D R Y",
                       style: GoogleFonts.allertaStencil(
                           textStyle: TextStyle(
-                        fontSize: 30.0.sp,
+                        fontSize: 0.07.sh,
                       )),
                     ),
                   ),
@@ -40,7 +37,7 @@ class _SignUpState extends State<SignUp> {
                     "Welcome to Sendry Family",
                     style: GoogleFonts.allertaStencil(
                         textStyle: TextStyle(
-                      fontSize: 10.0.sp,
+                      fontSize: 0.02.sh,
                     )),
                   ),
                   Padding(
@@ -55,14 +52,14 @@ class _SignUpState extends State<SignUp> {
                   ),
                   Padding(
                     padding: new EdgeInsets.only(
-                        top: 0.0.w, left: 5.0.w, right: 5.0.w),
+                        top: 0.05.sw, left: 0.05.sw, right: 0.05.sw),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(10.0.sp),
+                        contentPadding: EdgeInsets.all(0.025.sh),
                         labelText: "E-Mail",
                         labelStyle: TextStyle(
                             color: Theme.of(context).primaryColor,
-                            fontSize: 10.0.sp),
+                            fontSize: 0.020.sh),
                         fillColor: Theme.of(context).accentColor,
                         filled: true,
                       ),
@@ -77,14 +74,14 @@ class _SignUpState extends State<SignUp> {
                   ),
                   Padding(
                     padding: new EdgeInsets.only(
-                        top: 5.0.w, left: 5.0.w, right: 5.0.w),
+                        top: 5.0.w, left: 0.05.sw, right: 0.05.sw),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(10.0.sp),
+                        contentPadding: EdgeInsets.all(0.025.sh),
                         labelText: "Password",
                         labelStyle: TextStyle(
                             color: Theme.of(context).primaryColor,
-                            fontSize: 10.0.sp),
+                            fontSize: 0.020.sh),
                         fillColor: Theme.of(context).accentColor,
                         filled: true,
                       ),
@@ -98,23 +95,22 @@ class _SignUpState extends State<SignUp> {
                     ),
                   ),
                   Padding(
-                    padding: new EdgeInsets.all(15.0.sp),
+                    padding: new EdgeInsets.all(0.02.sh),
                     child: ElevatedButton(
                       onPressed: () {},
                       child: Text(
-                        "Sign Up",
-                        style: TextStyle(fontSize: 13.0.sp),
+                        "Log In",
+                        style: TextStyle(fontSize: 0.025.sh),
                       ),
                       style: ElevatedButton.styleFrom(
                           padding: new EdgeInsets.only(
-                              top: 4.0.w,
-                              left: 35.0.w,
-                              right: 38.0.w,
-                              bottom: 4.0.w),
+                              top: 0.030.sw,
+                              left: 0.38.sw,
+                              right: 0.38.sw,
+                              bottom: 0.030.sw),
                           primary: Theme.of(context).hintColor),
                     ),
-                  ),
-                  Container()
+                  )
                 ],
               ),
             ),

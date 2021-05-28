@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Notif extends StatefulWidget {
+class Search extends StatefulWidget {
   @override
-  _NotifState createState() => _NotifState();
+  _SearchState createState() => _SearchState();
 }
 
-class _NotifState extends State<Notif> {
+class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();

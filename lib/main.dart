@@ -1,10 +1,16 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:instgram/Screens/profile.dart';
 
+import 'package:sizer/sizer.dart';
+
+import 'Screens/chats.dart';
+import 'Screens/feed.dart';
 import 'Screens/login.dart';
+import 'Screens/search.dart';
 import 'Screens/signup.dart';
 import 'Screens/splashscreen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'Util/apptheme.dart';
 
 void main() {
@@ -33,6 +39,10 @@ class _MyAppState extends State<MyApp> {
                 '/': (context) => SplashScreen(),
                 '/login': (context) => Login(),
                 '/signup': (context) => SignUp(),
+                '/profile': (context) => Profile(),
+                '/feed': (context) => Feed(),
+                '/chat': (context) => Chat(),
+                '/search': (context) => Search(),
               },
               theme: AppTheme.lightTheme,
             ));

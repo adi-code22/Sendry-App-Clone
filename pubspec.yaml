@@ -27,6 +27,8 @@ dependencies:
   
   device_preview: ^0.7.3
   flutter_screenutil: ^5.0.0+2
+  sizer: ^2.0.13
+  responsive_sizer: ^2.0.1
   
 
 

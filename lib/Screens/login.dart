@@ -24,25 +24,25 @@ class _LoginState extends State<Login> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(25.0),
+                    padding: new EdgeInsets.only(top: 0.05.sh),
                     child: Text(
                       "S E N D R Y",
                       style: GoogleFonts.allertaStencil(
                           textStyle: TextStyle(
-                        fontSize: 30.0.sp,
+                        fontSize: 0.07.sh,
                       )),
                     ),
                   ),
                   Padding(
                     padding: new EdgeInsets.only(
-                        top: 15.0.w, left: 5.0.w, right: 5.0.w),
+                        top: 0.2.sw, left: 0.05.sw, right: 0.05.sw),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(10.0.sp),
+                        contentPadding: EdgeInsets.all(0.025.sh),
                         labelText: "E-Mail",
                         labelStyle: TextStyle(
                             color: Theme.of(context).primaryColor,
-                            fontSize: 10.0.sp),
+                            fontSize: 0.020.sh),
                         fillColor: Theme.of(context).accentColor,
                         filled: true,
                       ),
@@ -57,14 +57,14 @@ class _LoginState extends State<Login> {
                   ),
                   Padding(
                     padding: new EdgeInsets.only(
-                        top: 5.0.w, left: 5.0.w, right: 5.0.w),
+                        top: 5.0.w, left: 0.05.sw, right: 0.05.sw),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(10.0.sp),
+                        contentPadding: EdgeInsets.all(0.025.sh),
                         labelText: "Password",
                         labelStyle: TextStyle(
                             color: Theme.of(context).primaryColor,
-                            fontSize: 10.0.sp),
+                            fontSize: 0.020.sh),
                         fillColor: Theme.of(context).accentColor,
                         filled: true,
                       ),
@@ -80,31 +80,50 @@ class _LoginState extends State<Login> {
                   Align(
                     alignment: Alignment.centerRight,
                     child: Padding(
-                      padding: new EdgeInsets.only(right: 3.0.w),
+                      padding: new EdgeInsets.only(right: 0.040.sw),
                       child: TextButton(
                         child: Text(
                           "Forget password ?",
                           style: TextStyle(
                               color: Theme.of(context).hintColor,
-                              fontSize: 10.0.sp),
+                              fontSize: 0.025.sh),
                         ),
                         onPressed: () {},
                       ),
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/feed');
+                    },
                     child: Text(
                       "Log In",
-                      style: TextStyle(fontSize: 13.0.sp),
+                      style: TextStyle(fontSize: 0.025.sh),
                     ),
                     style: ElevatedButton.styleFrom(
                         padding: new EdgeInsets.only(
-                            top: 4.0.w,
-                            left: 38.0.w,
-                            right: 38.0.w,
-                            bottom: 4.0.w),
+                            top: 0.030.sw,
+                            left: 0.38.sw,
+                            right: 0.38.sw,
+                            bottom: 0.030.sw),
                         primary: Theme.of(context).hintColor),
+                  ),
+                  Padding(
+                    padding: new EdgeInsets.only(top: 0.225.sh),
+                    child: Divider(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Don't have an account?"),
+                      TextButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/signup');
+                          },
+                          child: Text("Sign Up")),
+                    ],
                   )
                 ],
               ),
