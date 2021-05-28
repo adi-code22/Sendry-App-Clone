@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sizer/sizer.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SignUp extends StatefulWidget {
   @override
@@ -13,6 +13,10 @@ class _SignUpState extends State<SignUp> {
   String _password = "";
   @override
   Widget build(BuildContext context) {
+    var h = MediaQuery.of(context).size.height;
+    var sf = MediaQuery.of(context).textScaleFactor;
+    print(h);
+    var w = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
