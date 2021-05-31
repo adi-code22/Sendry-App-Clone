@@ -9,10 +9,12 @@ import 'package:sizer/sizer.dart';
 import 'Screens/chats.dart';
 import 'Screens/feed.dart';
 import 'Screens/login.dart';
+import 'Screens/post.dart';
 import 'Screens/search.dart';
 import 'Screens/signup.dart';
 import 'Screens/splashscreen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'Screens/status.dart';
 import 'Util/apptheme.dart';
 
 void main() {
@@ -38,7 +40,7 @@ class _MyAppState extends State<MyApp> {
         builder: () => MaterialApp(
               debugShowCheckedModeBanner: false,
               routes: {
-                '/': (context) => ChatScreen(),
+                '/': (context) => Notif(),
                 '/login': (context) => Login(),
                 '/signup': (context) => SignUp(),
                 '/profile': (context) => Profile(),
@@ -46,7 +48,9 @@ class _MyAppState extends State<MyApp> {
                 '/chat': (context) => Chat(),
                 '/search': (context) => Search(),
                 '/notif': (context) => Notif(),
-                '/chatscreen': (context) => ChatScreen()
+                '/chatscreen': (context) => ChatScreen(),
+                '/status': (context) => Status(),
+                '/post': (context) => Post(),
               },
               theme: AppTheme.lightTheme,
             ));

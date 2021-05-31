@@ -257,7 +257,7 @@ class _FeedState extends State<Feed> {
                       borderRadius: BorderRadius.circular(20),
                       child: Image(
                         fit: BoxFit.cover,
-                        image: AssetImage("assets/pic.jpg"),
+                        image: AssetImage("assets/bath.webp"),
                       ),
                     ),
                   ),
