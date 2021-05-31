@@ -63,12 +63,67 @@ class _FeedState extends State<Feed> {
                       child: Column(
                         children: [
                           CircleAvatar(
-                            radius: 0.05.sh,
+                            radius: 0.046.sh,
                             backgroundImage: AssetImage("assets/photo2.jfif"),
                           ),
-                          Text(
-                            "Your Story",
-                            style: TextStyle(fontSize: 0.02.sh),
+                          Padding(
+                            padding: new EdgeInsets.only(top: 0.008.sh),
+                            child: Text(
+                              "Your Story",
+                              style: TextStyle(fontSize: 0.02.sh),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: new EdgeInsets.all(0.01.sh),
+                      child: Column(
+                        children: [
+                          Stack(children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  border: Border.all(color: Colors.black)),
+                              child: Padding(
+                                padding: new EdgeInsets.all(0.005.sh),
+                                child: CircleAvatar(
+                                  radius: 0.044.sh,
+                                  backgroundImage:
+                                      AssetImage("assets/photo2.jfif"),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              top: 0.080.sh,
+                              left: 0.030.sh,
+                              child: Container(
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: new EdgeInsets.all(0.002.sh),
+                                      child: Text(
+                                        "LIVE",
+                                        style: TextStyle(
+                                            color: Colors.white, fontSize: 10),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    border: Border.all(
+                                        color: Colors.white, width: 2),
+                                    borderRadius: BorderRadius.circular(5)),
+                              ),
+                            )
+                          ]),
+                          Padding(
+                            padding: new EdgeInsets.all(0.008.sh),
+                            child: Text(
+                              "keran",
+                              style: TextStyle(fontSize: 0.02.sh),
+                            ),
                           ),
                         ],
                       ),
@@ -78,12 +133,15 @@ class _FeedState extends State<Feed> {
                       child: Column(
                         children: [
                           CircleAvatar(
-                            radius: 0.05.sh,
+                            radius: 0.046.sh,
                             backgroundImage: AssetImage("assets/photo2.jfif"),
                           ),
-                          Text(
-                            "Jackeyy",
-                            style: TextStyle(fontSize: 0.02.sh),
+                          Padding(
+                            padding: new EdgeInsets.all(0.008.sh),
+                            child: Text(
+                              "zackyy",
+                              style: TextStyle(fontSize: 0.02.sh),
+                            ),
                           ),
                         ],
                       ),
@@ -93,12 +151,15 @@ class _FeedState extends State<Feed> {
                       child: Column(
                         children: [
                           CircleAvatar(
-                            radius: 0.05.sh,
+                            radius: 0.046.sh,
                             backgroundImage: AssetImage("assets/photo2.jfif"),
                           ),
-                          Text(
-                            "Zack Rider",
-                            style: TextStyle(fontSize: 0.02.sh),
+                          Padding(
+                            padding: new EdgeInsets.all(0.008.sh),
+                            child: Text(
+                              "clooney_m",
+                              style: TextStyle(fontSize: 0.02.sh),
+                            ),
                           ),
                         ],
                       ),
@@ -108,12 +169,15 @@ class _FeedState extends State<Feed> {
                       child: Column(
                         children: [
                           CircleAvatar(
-                            radius: 0.05.sh,
+                            radius: 0.046.sh,
                             backgroundImage: AssetImage("assets/photo2.jfif"),
                           ),
-                          Text(
-                            "Tommy",
-                            style: TextStyle(fontSize: 0.02.sh),
+                          Padding(
+                            padding: new EdgeInsets.all(0.008.sh),
+                            child: Text(
+                              "kerran",
+                              style: TextStyle(fontSize: 0.02.sh),
+                            ),
                           ),
                         ],
                       ),
@@ -123,76 +187,19 @@ class _FeedState extends State<Feed> {
                       child: Column(
                         children: [
                           CircleAvatar(
-                            radius: 0.05.sh,
+                            radius: 0.046.sh,
                             backgroundImage: AssetImage("assets/photo2.jfif"),
                           ),
-                          Text(
-                            "Caramel",
-                            style: TextStyle(fontSize: 0.02.sh),
+                          Padding(
+                            padding: new EdgeInsets.all(0.008.sh),
+                            child: Text(
+                              "mine_22",
+                              style: TextStyle(fontSize: 0.02.sh),
+                            ),
                           ),
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: new EdgeInsets.all(0.01.sh),
-                      child: Column(
-                        children: [
-                          CircleAvatar(
-                            radius: 0.05.sh,
-                            backgroundImage: AssetImage("assets/photo2.jfif"),
-                          ),
-                          Text(
-                            "Hanna",
-                            style: TextStyle(fontSize: 0.02.sh),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: new EdgeInsets.all(0.01.sh),
-                      child: Column(
-                        children: [
-                          CircleAvatar(
-                            radius: 0.05.sh,
-                            backgroundImage: AssetImage("assets/photo2.jfif"),
-                          ),
-                          Text(
-                            "Your Story",
-                            style: TextStyle(fontSize: 0.02.sh),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: new EdgeInsets.all(0.01.sh),
-                      child: Column(
-                        children: [
-                          CircleAvatar(
-                            radius: 0.05.sh,
-                            backgroundImage: AssetImage("assets/photo2.jfif"),
-                          ),
-                          Text(
-                            "Your Story",
-                            style: TextStyle(fontSize: 0.02.sh),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: new EdgeInsets.all(0.01.sh),
-                      child: Column(
-                        children: [
-                          CircleAvatar(
-                            radius: 0.05.sh,
-                            backgroundImage: AssetImage("assets/photo2.jfif"),
-                          ),
-                          Text(
-                            "Your Story",
-                            style: TextStyle(fontSize: 0.02.sh),
-                          ),
-                        ],
-                      ),
-                    )
                   ],
                 ),
               ),
@@ -223,44 +230,105 @@ class _FeedState extends State<Feed> {
             title: Text("Zack Johnson"),
             subtitle: Text("25 minutes ago from OnePlus Nord"),
           ),
-          Container(
-            color: Colors.white,
-            height: 0.3.sh,
-            width: 0.8.sw,
-            child: Image(image: AssetImage("assets/pic.jpg")),
+          Padding(
+            padding: new EdgeInsets.only(left: 0.03.sh, right: 0.03.sh),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black,
+                    blurRadius: 2.0,
+                    spreadRadius: 0.0,
+                    offset: Offset(0.0, 2.0), // shadow direction: bottom right
+                  )
+                ],
+              ),
+              //height: 0.8.sh,
+              width: 2,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: new EdgeInsets.only(
+                        top: 0.025.sh,
+                        left: 0.025.sh,
+                        right: 0.025.sh,
+                        bottom: 0.01.sh),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/pic.jpg"),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 0.04.sh, top: 0.000.sh),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: new EdgeInsets.only(
+                              left: 0.005.sh, bottom: 0.005.sh),
+                          child: CircleAvatar(
+                            radius: 15,
+                            backgroundColor: Colors.green,
+                          ),
+                        ),
+                        Padding(
+                          padding: new EdgeInsets.only(
+                              left: 0.005.sh, bottom: 0.005.sh),
+                          child: CircleAvatar(
+                            radius: 15,
+                            backgroundColor: Colors.red,
+                          ),
+                        ),
+                        Padding(
+                          padding: new EdgeInsets.only(
+                              left: 0.005.sh, bottom: 0.005.sh),
+                          child: CircleAvatar(
+                            radius: 15,
+                            child: Text("+20"),
+                            backgroundColor: Colors.yellow,
+                          ),
+                        ),
+                        Padding(
+                          padding: new EdgeInsets.only(
+                              left: 0.15.sh, bottom: 0.005.sh),
+                          child: CircleAvatar(
+                            radius: 18,
+                            child: Image(
+                                image: AssetImage("assets/Heart (1).png")),
+                            backgroundColor: Colors.yellow,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 0.04.sh, top: 0.003.sh),
-            child: Row(
-              children: [
-                Padding(
-                  padding: new EdgeInsets.all(0.005.sh),
-                  child: CircleAvatar(
-                    backgroundColor: Colors.green,
-                  ),
-                ),
-                Padding(
-                  padding: new EdgeInsets.all(0.005.sh),
-                  child: CircleAvatar(
-                    backgroundColor: Colors.red,
-                  ),
-                ),
-                Padding(
-                  padding: new EdgeInsets.all(0.005.sh),
-                  child: CircleAvatar(
-                    child: Text("+20"),
-                    backgroundColor: Colors.yellow,
-                  ),
-                ),
-                Padding(
-                  padding: new EdgeInsets.only(top: 0.005.sh, left: 0.15.sh),
-                  child: CircleAvatar(
-                    child: Image(image: AssetImage("assets/Heart (1).png")),
-                    backgroundColor: Colors.yellow,
-                  ),
-                )
-              ],
+            padding: new EdgeInsets.only(
+                top: 0.005.sh, left: 0.055.sw, right: 0.05.sw),
+            child: RichText(
+                text: new TextSpan(
+                    style: TextStyle(fontSize: 15, color: Colors.black),
+                    children: <TextSpan>[
+                  new TextSpan(
+                      text: "zackky",
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                  new TextSpan(
+                      text:
+                          " The trip to bali was amazing and I want to share with you guys have a look please")
+                ])),
+          ),
+          ListTile(
+            leading: CircleAvatar(
+              backgroundColor: Colors.blue,
             ),
+            title: Text("Dhrew_r"),
+            subtitle: Text("45 minutes ago from iPhone 8"),
           )
         ],
       ),
@@ -275,6 +343,8 @@ class _FeedState extends State<Feed> {
       Navigator.pushNamed(context, '/profile');
     } else if (index == 1) {
       Navigator.pushNamed(context, '/search');
+    } else if (index == 3) {
+      Navigator.pushNamed(context, '/notif');
     }
   }
 }

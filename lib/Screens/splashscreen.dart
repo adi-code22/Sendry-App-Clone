@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Padding(
-                  padding: new EdgeInsets.only(top: 0.2.sh),
+                  padding: new EdgeInsets.only(top: 0.3.sh),
                   child: Container(
                     color: Colors.white,
                     height: 50.0.h,
@@ -33,14 +33,10 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    "S E N D R Y",
-                    textScaleFactor: 1,
-                    style: GoogleFonts.allertaStencil(
-                        textStyle: TextStyle(
-                      fontSize: 45.0.w,
-                    )),
+                  padding: new EdgeInsets.only(
+                      top: 0.03.sh, left: 0.07.sh, right: 0.07.sh),
+                  child: Image(
+                    image: AssetImage('assets/App name (3).png'),
                   ),
                 ),
                 Padding(

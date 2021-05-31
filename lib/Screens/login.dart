@@ -24,21 +24,16 @@ class _LoginState extends State<Login> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: new EdgeInsets.only(top: 0.05.sh),
-                    child: Text(
-                      "S E N D R Y",
-                      style: GoogleFonts.allertaStencil(
-                          textStyle: TextStyle(
-                        fontSize: 0.07.sh,
-                      )),
-                    ),
-                  ),
+                      padding: new EdgeInsets.only(
+                          top: 0.08.sh, left: 0.05.sh, right: 0.05.sh),
+                      child:
+                          Image(image: AssetImage('assets/App name (3).png'))),
                   Padding(
                     padding: new EdgeInsets.only(
                         top: 0.2.sw, left: 0.05.sw, right: 0.05.sw),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(0.025.sh),
+                        contentPadding: EdgeInsets.all(0.018.sh),
                         labelText: "E-Mail",
                         labelStyle: TextStyle(
                             color: Theme.of(context).primaryColor,
@@ -60,7 +55,7 @@ class _LoginState extends State<Login> {
                         top: 5.0.w, left: 0.05.sw, right: 0.05.sw),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(0.025.sh),
+                        contentPadding: EdgeInsets.all(0.018.sh),
                         labelText: "Password",
                         labelStyle: TextStyle(
                             color: Theme.of(context).primaryColor,
@@ -94,7 +89,7 @@ class _LoginState extends State<Login> {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/feed');
+                      Navigator.pushReplacementNamed(context, '/feed');
                     },
                     child: Text(
                       "Log In",
@@ -109,7 +104,7 @@ class _LoginState extends State<Login> {
                         primary: Theme.of(context).hintColor),
                   ),
                   Padding(
-                    padding: new EdgeInsets.only(top: 0.225.sh),
+                    padding: new EdgeInsets.only(top: 0.290.sh),
                     child: Divider(
                       color: Colors.grey,
                     ),

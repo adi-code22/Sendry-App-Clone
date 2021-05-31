@@ -55,7 +55,7 @@ class _SignUpState extends State<SignUp> {
                         top: 0.05.sw, left: 0.05.sw, right: 0.05.sw),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(0.025.sh),
+                        contentPadding: EdgeInsets.all(0.018.sh),
                         labelText: "E-Mail",
                         labelStyle: TextStyle(
                             color: Theme.of(context).primaryColor,
@@ -77,7 +77,7 @@ class _SignUpState extends State<SignUp> {
                         top: 5.0.w, left: 0.05.sw, right: 0.05.sw),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(0.025.sh),
+                        contentPadding: EdgeInsets.all(0.018.sh),
                         labelText: "Password",
                         labelStyle: TextStyle(
                             color: Theme.of(context).primaryColor,

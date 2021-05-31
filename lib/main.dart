@@ -1,5 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:instgram/Screens/notification.dart';
 import 'package:instgram/Screens/profile.dart';
 
 import 'package:sizer/sizer.dart';
@@ -36,13 +37,14 @@ class _MyAppState extends State<MyApp> {
         builder: () => MaterialApp(
               debugShowCheckedModeBanner: false,
               routes: {
-                '/': (context) => SplashScreen(),
+                '/': (context) => Search(),
                 '/login': (context) => Login(),
                 '/signup': (context) => SignUp(),
                 '/profile': (context) => Profile(),
                 '/feed': (context) => Feed(),
                 '/chat': (context) => Chat(),
                 '/search': (context) => Search(),
+                '/notif': (context) => Notif()
               },
               theme: AppTheme.lightTheme,
             ));
