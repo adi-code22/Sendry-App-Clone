@@ -15,12 +15,6 @@ class _SearchState extends State<Search> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
-                width: 0.9.sw,
-                child: Divider(
-                  color: Colors.grey,
-                ),
-              ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -154,7 +148,7 @@ class _SearchState extends State<Search> {
                 ),
               ),
               Padding(
-                padding: new EdgeInsets.all(0.020.sh),
+                padding: new EdgeInsets.all(0.015.sh),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
@@ -172,8 +166,8 @@ class _SearchState extends State<Search> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: Container(
-                          height: 0.140.sh,
-                          width: 0.60.sw,
+                          height: 0.170.sh,
+                          width: 0.65.sw,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               fit: BoxFit.fill,
@@ -189,20 +183,23 @@ class _SearchState extends State<Search> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           ClipRRect(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(10),
                             child: Container(
-                                height: 0.140.sh,
-                                width: 0.30.sw,
-                                child: Image(
-                                    image: AssetImage("assets/lemon.jpg"))),
+                              height: 0.140.sh,
+                              width: 0.30.sw,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      fit: BoxFit.fill,
+                                      image: AssetImage("assets/lemon.jpg"))),
+                            ),
                           ),
                           ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Container(
                                 height: 0.140.sh,
-                                width: 0.30.sw,
+                                width: 0.35.sw,
                                 child: Image(
-                                    image: AssetImage("assets/OIP.jfif"))),
+                                    image: AssetImage("assets/chair.jpg"))),
                           ),
                         ],
                       )
@@ -216,7 +213,7 @@ class _SearchState extends State<Search> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: Container(
-                          height: 0.280.sh,
+                          height: 0.320.sh,
                           width: 0.23.sw,
                           decoration: BoxDecoration(
                               image: DecorationImage(
