@@ -20,10 +20,12 @@ import 'Util/apptheme.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(DevicePreview(
-    enabled: true,
-    builder: (context) => MyApp(),
-  ));
+  runApp(
+      // DevicePreview(
+      //   enabled: true,
+      //   builder: (context) => MyApp(),
+      // ),
+      MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -40,7 +42,7 @@ class _MyAppState extends State<MyApp> {
         builder: () => MaterialApp(
               debugShowCheckedModeBanner: false,
               routes: {
-                '/': (context) => Notif(),
+                '/': (context) => SplashScreen(),
                 '/login': (context) => Login(),
                 '/signup': (context) => SignUp(),
                 '/profile': (context) => Profile(),

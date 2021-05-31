@@ -205,12 +205,15 @@ class _ChatScreenState extends State<ChatScreen> {
               ),
             )
           ],
-          leading: Icon(Icons.arrow_back),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () => Navigator.pop(context),
+          ),
           title: Row(
             children: [
               CircleAvatar(
                 radius: 25,
-                backgroundImage: AssetImage(""),
+                backgroundImage: AssetImage("assets/25.png"),
               ),
               Padding(
                 padding: new EdgeInsets.only(left: 0.02.sw),

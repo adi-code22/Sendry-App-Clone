@@ -67,7 +67,7 @@ class _SearchState extends State<Search> {
                         top: 0.19.sh,
                         left: 0.7.sw,
                         child: CircleAvatar(
-                          backgroundColor: Colors.white,
+                          backgroundImage: AssetImage("assets/18.png"),
                         ),
                       )
                     ]),
@@ -101,13 +101,13 @@ class _SearchState extends State<Search> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Sarah Ridley",
+                                "Michael Ellias",
                                 style: TextStyle(
                                     fontSize: 0.030.sh,
                                     fontWeight: FontWeight.bold),
                               ),
                               Text(
-                                "Photographer",
+                                "Writer",
                                 style: TextStyle(fontSize: 0.025.sh),
                               )
                             ],
@@ -117,7 +117,7 @@ class _SearchState extends State<Search> {
                           top: 0.19.sh,
                           left: 0.7.sw,
                           child: CircleAvatar(
-                            backgroundColor: Colors.white,
+                            backgroundImage: AssetImage("assets/26.png"),
                           ),
                         )
                       ]),

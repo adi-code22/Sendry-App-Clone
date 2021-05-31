@@ -8,22 +8,22 @@ class Post extends StatefulWidget {
 
 class _PostState extends State<Post> {
   List<String> images = [
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",
+    "assets/13.png",
+    "assets/19.png",
+    "assets/18.png",
+    "assets/19.png",
+    "assets/back.jfif",
+    "assets/background.jfif",
+    "assets/bath.webp",
+    "assets/dog.jfif",
+    "assets/3.png",
+    "assets/6.png",
+    "assets/9.png",
+    "assets/12.png",
+    "assets/7.png",
+    "assets/20.png",
+    "assets/25.png",
+    "assets/26.png",
   ];
 
   @override
@@ -82,6 +82,7 @@ class _PostState extends State<Post> {
                   height: 0.4.sh,
                   width: 1.sw,
                   child: GridView.builder(
+                    physics: new BouncingScrollPhysics(),
                     scrollDirection: Axis.vertical,
                     itemCount: images.length,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -89,7 +90,7 @@ class _PostState extends State<Post> {
                         crossAxisSpacing: 4.0,
                         mainAxisSpacing: 4.0),
                     itemBuilder: (BuildContext context, int index) {
-                      return Image.network(images[index]);
+                      return Image.asset(images[index]);
                     },
                   ),
                 )

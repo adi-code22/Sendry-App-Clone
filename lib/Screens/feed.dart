@@ -96,15 +96,14 @@ class _FeedState extends State<Feed> {
                                   padding: new EdgeInsets.all(0.005.sh),
                                   child: CircleAvatar(
                                     radius: 0.044.sh,
-                                    backgroundImage:
-                                        AssetImage("assets/photo2.jfif"),
+                                    backgroundImage: AssetImage("assets/6.png"),
                                   ),
                                 ),
                               ),
                             ),
                             Positioned(
                               top: 0.080.sh,
-                              left: 0.030.sh,
+                              left: 0.033.sh,
                               child: Container(
                                 child: Column(
                                   children: [
@@ -145,7 +144,7 @@ class _FeedState extends State<Feed> {
                                 Navigator.pushNamed(context, '/status'),
                             child: CircleAvatar(
                               radius: 0.046.sh,
-                              backgroundImage: AssetImage("assets/photo2.jfif"),
+                              backgroundImage: AssetImage("assets/3.png"),
                             ),
                           ),
                           Padding(
@@ -167,7 +166,7 @@ class _FeedState extends State<Feed> {
                                 Navigator.pushNamed(context, '/status'),
                             child: CircleAvatar(
                               radius: 0.046.sh,
-                              backgroundImage: AssetImage("assets/photo2.jfif"),
+                              backgroundImage: AssetImage("assets/9.png"),
                             ),
                           ),
                           Padding(
@@ -189,7 +188,7 @@ class _FeedState extends State<Feed> {
                                 Navigator.pushNamed(context, '/status'),
                             child: CircleAvatar(
                               radius: 0.046.sh,
-                              backgroundImage: AssetImage("assets/photo2.jfif"),
+                              backgroundImage: AssetImage("assets/12.png"),
                             ),
                           ),
                           Padding(
@@ -351,7 +350,7 @@ class _FeedState extends State<Feed> {
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.blue,
+              backgroundImage: AssetImage("assets/18.png"),
             ),
             title: Text("Dhrew_r"),
             subtitle: Text("45 minutes ago from iPhone 8"),

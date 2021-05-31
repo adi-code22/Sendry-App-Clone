@@ -97,6 +97,7 @@ class _ChatState extends State<Chat> {
         padding: EdgeInsets.only(top: 0.02.sh),
         children: [
           ListTile(
+            onTap: () => Navigator.pushNamed(context, '/chatscreen'),
             title: Row(
               children: [
                 Text("joshua_l"),
@@ -113,19 +114,21 @@ class _ChatState extends State<Chat> {
             trailing: Text("now"),
             leading: CircleAvatar(
               radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
+              backgroundImage: AssetImage("assets/26.png"),
             ),
           ),
           ListTile(
+            onTap: () => Navigator.pushNamed(context, '/chatscreen'),
             title: Text("karennnea_l"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
               radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
+              backgroundImage: AssetImage("assets/19.png"),
             ),
           ),
           ListTile(
+            onTap: () => Navigator.pushNamed(context, '/chatscreen'),
             title: Row(
               children: [
                 Text("martini_rond"),
@@ -142,28 +145,31 @@ class _ChatState extends State<Chat> {
             trailing: Text("now"),
             leading: CircleAvatar(
               radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
+              backgroundImage: AssetImage("assets/25.png"),
             ),
           ),
           ListTile(
+            onTap: () => Navigator.pushNamed(context, '/chatscreen'),
             title: Text("andrewww_"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
               radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
+              backgroundImage: AssetImage("assets/dog.jfif"),
             ),
           ),
           ListTile(
+            onTap: () => Navigator.pushNamed(context, '/chatscreen'),
             title: Text("kiero_d"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
               radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
+              backgroundImage: AssetImage("assets/chair.PNG"),
             ),
           ),
           ListTile(
+            onTap: () => Navigator.pushNamed(context, '/chatscreen'),
             title: Row(
               children: [
                 Text("maxjacobson"),
@@ -180,10 +186,11 @@ class _ChatState extends State<Chat> {
             trailing: Text("now"),
             leading: CircleAvatar(
               radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
+              backgroundColor: Colors.red,
             ),
           ),
           ListTile(
+            onTap: () => Navigator.pushNamed(context, '/chatscreen'),
             title: Text("jamie.franco"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
@@ -193,25 +200,8 @@ class _ChatState extends State<Chat> {
             ),
           ),
           ListTile(
+            onTap: () => Navigator.pushNamed(context, '/chatscreen'),
             title: Text("m_humhrey"),
-            subtitle: Text("Have a nice day, bro!"),
-            trailing: Text("now"),
-            leading: CircleAvatar(
-              radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
-            ),
-          ),
-          ListTile(
-            title: Text("joshua_l"),
-            subtitle: Text("Have a nice day, bro!"),
-            trailing: Text("now"),
-            leading: CircleAvatar(
-              radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
-            ),
-          ),
-          ListTile(
-            title: Text("joshua_l"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
@@ -234,6 +224,10 @@ class _ChatState extends State<Chat> {
       Navigator.pushNamed(context, '/feed');
     } else if (index == 1) {
       Navigator.pushNamed(context, '/search');
+    } else if (index == 2) {
+      Navigator.pushNamed(context, '/post');
+    } else if (index == 3) {
+      Navigator.pushNamed(context, '/notif');
     }
   }
 }
