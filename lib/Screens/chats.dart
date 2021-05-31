@@ -52,29 +52,38 @@ class _ChatState extends State<Chat> {
         preferredSize: Size(0, 0.17.sh),
         child: AppBar(
           bottom: PreferredSize(
-              child: TextFormField(
-                decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.search),
-                  hintText: "Search",
-                  filled: true,
-                  enabledBorder: const OutlineInputBorder(
-                    borderSide:
-                        const BorderSide(color: Colors.black, width: 1.0),
-                    borderRadius: BorderRadius.all(Radius.circular(100)),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: new EdgeInsets.only(bottom: 0.02.sw),
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        contentPadding: EdgeInsets.all(0.0.sw),
+                        prefixIcon: Icon(Icons.search),
+                        hintText: "Search",
+                        filled: true,
+                        enabledBorder: const OutlineInputBorder(
+                          borderSide:
+                              const BorderSide(color: Colors.black, width: 1.0),
+                          borderRadius: BorderRadius.all(Radius.circular(100)),
+                        ),
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
               preferredSize: Size(0, 0)),
           actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.message,
-                  size: 0.08.sw,
-                ))
+            Padding(
+              padding: new EdgeInsets.only(right: 0.05.sw, top: 0.01.sh),
+              child: CircleAvatar(
+                radius: 0.035.sh,
+                backgroundImage: AssetImage("assets/Like@3x.png"),
+              ),
+            )
           ],
           leading: Padding(
-            padding: new EdgeInsets.all(0.005.sh),
+            padding: new EdgeInsets.only(top: 0.015.sh),
             child:
                 CircleAvatar(backgroundImage: AssetImage("assets/photo.jfif")),
           ),
@@ -88,7 +97,18 @@ class _ChatState extends State<Chat> {
         padding: EdgeInsets.only(top: 0.02.sh),
         children: [
           ListTile(
-            title: Text("joshua_l"),
+            title: Row(
+              children: [
+                Text("joshua_l"),
+                Padding(
+                  padding: new EdgeInsets.only(left: 0.02.sw),
+                  child: CircleAvatar(
+                    radius: 5,
+                    backgroundColor: Colors.green,
+                  ),
+                )
+              ],
+            ),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
@@ -97,7 +117,7 @@ class _ChatState extends State<Chat> {
             ),
           ),
           ListTile(
-            title: Text("joshua_l"),
+            title: Text("karennnea_l"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
@@ -106,7 +126,18 @@ class _ChatState extends State<Chat> {
             ),
           ),
           ListTile(
-            title: Text("joshua_l"),
+            title: Row(
+              children: [
+                Text("martini_rond"),
+                Padding(
+                  padding: new EdgeInsets.only(left: 0.02.sw),
+                  child: CircleAvatar(
+                    radius: 5,
+                    backgroundColor: Colors.green,
+                  ),
+                )
+              ],
+            ),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
@@ -115,7 +146,7 @@ class _ChatState extends State<Chat> {
             ),
           ),
           ListTile(
-            title: Text("joshua_l"),
+            title: Text("andrewww_"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
@@ -124,7 +155,7 @@ class _ChatState extends State<Chat> {
             ),
           ),
           ListTile(
-            title: Text("joshua_l"),
+            title: Text("kiero_d"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
@@ -133,7 +164,18 @@ class _ChatState extends State<Chat> {
             ),
           ),
           ListTile(
-            title: Text("joshua_l"),
+            title: Row(
+              children: [
+                Text("maxjacobson"),
+                Padding(
+                  padding: new EdgeInsets.only(left: 0.02.sw),
+                  child: CircleAvatar(
+                    radius: 5,
+                    backgroundColor: Colors.green,
+                  ),
+                )
+              ],
+            ),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
@@ -142,7 +184,7 @@ class _ChatState extends State<Chat> {
             ),
           ),
           ListTile(
-            title: Text("joshua_l"),
+            title: Text("jamie.franco"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(
@@ -151,25 +193,7 @@ class _ChatState extends State<Chat> {
             ),
           ),
           ListTile(
-            title: Text("joshua_l"),
-            subtitle: Text("Have a nice day, bro!"),
-            trailing: Text("now"),
-            leading: CircleAvatar(
-              radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
-            ),
-          ),
-          ListTile(
-            title: Text("joshua_l"),
-            subtitle: Text("Have a nice day, bro!"),
-            trailing: Text("now"),
-            leading: CircleAvatar(
-              radius: 0.05.sh,
-              backgroundImage: AssetImage("assets/photo.jfif"),
-            ),
-          ),
-          ListTile(
-            title: Text("joshua_l"),
+            title: Text("m_humhrey"),
             subtitle: Text("Have a nice day, bro!"),
             trailing: Text("now"),
             leading: CircleAvatar(

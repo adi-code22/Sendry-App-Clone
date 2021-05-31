@@ -1,5 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:instgram/Screens/chatscreen.dart';
 import 'package:instgram/Screens/notification.dart';
 import 'package:instgram/Screens/profile.dart';
 
@@ -37,14 +38,15 @@ class _MyAppState extends State<MyApp> {
         builder: () => MaterialApp(
               debugShowCheckedModeBanner: false,
               routes: {
-                '/': (context) => Search(),
+                '/': (context) => ChatScreen(),
                 '/login': (context) => Login(),
                 '/signup': (context) => SignUp(),
                 '/profile': (context) => Profile(),
                 '/feed': (context) => Feed(),
                 '/chat': (context) => Chat(),
                 '/search': (context) => Search(),
-                '/notif': (context) => Notif()
+                '/notif': (context) => Notif(),
+                '/chatscreen': (context) => ChatScreen()
               },
               theme: AppTheme.lightTheme,
             ));

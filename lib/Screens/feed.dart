@@ -14,7 +14,7 @@ class _FeedState extends State<Feed> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.white,
-        currentIndex: 0,
+        // currentIndex: 0,
         onTap: _onItemTapped,
         items: [
           BottomNavigationBarItem(
@@ -214,7 +214,6 @@ class _FeedState extends State<Feed> {
                   size: 0.08.sw,
                 ))
           ],
-          leading: Container(),
           title: Text(
             "Feed",
             style: TextStyle(fontSize: 0.09.sw),

@@ -87,10 +87,7 @@ class _SearchState extends State<Search> {
                                         2.0), // shadow direction: bottom right
                                   )
                                 ],
-                                image: DecorationImage(
-                                    fit: BoxFit.fill,
-                                    image: AssetImage("assets/leaf.jpg")),
-                                color: Colors.pink,
+                                color: Colors.pink[100],
                                 border: Border.all(color: Colors.grey),
                                 borderRadius: BorderRadius.circular(20)),
                             height: 0.25.sh,
@@ -193,13 +190,19 @@ class _SearchState extends State<Search> {
                                       image: AssetImage("assets/lemon.jpg"))),
                             ),
                           ),
+                          SizedBox(
+                            width: 0.030.sw,
+                          ),
                           ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Container(
-                                height: 0.140.sh,
-                                width: 0.35.sw,
-                                child: Image(
-                                    image: AssetImage("assets/chair.jpg"))),
+                              height: 0.140.sh,
+                              width: 0.30.sw,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      fit: BoxFit.fill,
+                                      image: AssetImage("assets/chair.PNG"))),
+                            ),
                           ),
                         ],
                       )
