@@ -162,6 +162,10 @@ class _ProfileState extends State<Profile> {
       Navigator.pushNamed(context, '/feed');
     } else if (index == 1) {
       Navigator.pushNamed(context, '/search');
+    } else if (index == 2) {
+      Navigator.pushNamed(context, '/post');
+    } else if (index == 3) {
+      Navigator.pushNamed(context, '/notif');
     }
   }
 }

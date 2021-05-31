@@ -62,9 +62,13 @@ class _FeedState extends State<Feed> {
                       padding: new EdgeInsets.all(0.01.sh),
                       child: Column(
                         children: [
-                          CircleAvatar(
-                            radius: 0.046.sh,
-                            backgroundImage: AssetImage("assets/photo2.jfif"),
+                          GestureDetector(
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/status'),
+                            child: CircleAvatar(
+                              radius: 0.046.sh,
+                              backgroundImage: AssetImage("assets/photo2.jfif"),
+                            ),
                           ),
                           Padding(
                             padding: new EdgeInsets.only(top: 0.008.sh),
@@ -81,16 +85,20 @@ class _FeedState extends State<Feed> {
                       child: Column(
                         children: [
                           Stack(children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(100),
-                                  border: Border.all(color: Colors.black)),
-                              child: Padding(
-                                padding: new EdgeInsets.all(0.005.sh),
-                                child: CircleAvatar(
-                                  radius: 0.044.sh,
-                                  backgroundImage:
-                                      AssetImage("assets/photo2.jfif"),
+                            GestureDetector(
+                              onTap: () =>
+                                  Navigator.pushNamed(context, '/status'),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(100),
+                                    border: Border.all(color: Colors.black)),
+                                child: Padding(
+                                  padding: new EdgeInsets.all(0.005.sh),
+                                  child: CircleAvatar(
+                                    radius: 0.044.sh,
+                                    backgroundImage:
+                                        AssetImage("assets/photo2.jfif"),
+                                  ),
                                 ),
                               ),
                             ),
@@ -132,9 +140,13 @@ class _FeedState extends State<Feed> {
                       padding: new EdgeInsets.all(0.01.sh),
                       child: Column(
                         children: [
-                          CircleAvatar(
-                            radius: 0.046.sh,
-                            backgroundImage: AssetImage("assets/photo2.jfif"),
+                          GestureDetector(
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/status'),
+                            child: CircleAvatar(
+                              radius: 0.046.sh,
+                              backgroundImage: AssetImage("assets/photo2.jfif"),
+                            ),
                           ),
                           Padding(
                             padding: new EdgeInsets.all(0.008.sh),
@@ -150,9 +162,13 @@ class _FeedState extends State<Feed> {
                       padding: new EdgeInsets.all(0.01.sh),
                       child: Column(
                         children: [
-                          CircleAvatar(
-                            radius: 0.046.sh,
-                            backgroundImage: AssetImage("assets/photo2.jfif"),
+                          GestureDetector(
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/status'),
+                            child: CircleAvatar(
+                              radius: 0.046.sh,
+                              backgroundImage: AssetImage("assets/photo2.jfif"),
+                            ),
                           ),
                           Padding(
                             padding: new EdgeInsets.all(0.008.sh),
@@ -168,9 +184,13 @@ class _FeedState extends State<Feed> {
                       padding: new EdgeInsets.all(0.01.sh),
                       child: Column(
                         children: [
-                          CircleAvatar(
-                            radius: 0.046.sh,
-                            backgroundImage: AssetImage("assets/photo2.jfif"),
+                          GestureDetector(
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/status'),
+                            child: CircleAvatar(
+                              radius: 0.046.sh,
+                              backgroundImage: AssetImage("assets/photo2.jfif"),
+                            ),
                           ),
                           Padding(
                             padding: new EdgeInsets.all(0.008.sh),
@@ -186,9 +206,13 @@ class _FeedState extends State<Feed> {
                       padding: new EdgeInsets.all(0.01.sh),
                       child: Column(
                         children: [
-                          CircleAvatar(
-                            radius: 0.046.sh,
-                            backgroundImage: AssetImage("assets/photo2.jfif"),
+                          GestureDetector(
+                            onTap: () =>
+                                Navigator.pushNamed(context, '/status'),
+                            child: CircleAvatar(
+                              radius: 0.046.sh,
+                              backgroundImage: AssetImage("assets/photo2.jfif"),
+                            ),
                           ),
                           Padding(
                             padding: new EdgeInsets.all(0.008.sh),
@@ -223,8 +247,11 @@ class _FeedState extends State<Feed> {
       body: ListView(
         children: [
           ListTile(
-            leading: CircleAvatar(
-              backgroundImage: AssetImage("assets/photo.jfif"),
+            leading: GestureDetector(
+              onTap: () => Navigator.pushNamed(context, '/status'),
+              child: CircleAvatar(
+                backgroundImage: AssetImage("assets/photo.jfif"),
+              ),
             ),
             title: Text("Zack Johnson"),
             subtitle: Text("25 minutes ago from OnePlus Nord"),
@@ -338,12 +365,14 @@ class _FeedState extends State<Feed> {
     setState(() {
       _selectedIndex = index;
     });
-    if (index == 4) {
-      Navigator.pushNamed(context, '/profile');
-    } else if (index == 1) {
+    if (index == 1) {
       Navigator.pushNamed(context, '/search');
+    } else if (index == 2) {
+      Navigator.pushNamed(context, '/post');
     } else if (index == 3) {
       Navigator.pushNamed(context, '/notif');
+    } else if (index == 4) {
+      Navigator.pushNamed(context, '/profile');
     }
   }
 }

@@ -274,6 +274,8 @@ class _NotifState extends State<Notif> {
       Navigator.pushNamed(context, '/feed');
     } else if (index == 1) {
       Navigator.pushNamed(context, '/search');
+    } else if (index == 2) {
+      Navigator.pushNamed(context, '/post');
     }
   }
 }

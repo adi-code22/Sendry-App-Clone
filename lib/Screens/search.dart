@@ -295,9 +295,11 @@ class _SearchState extends State<Search> {
     if (index == 4) {
       Navigator.pushNamed(context, '/profile');
     } else if (index == 2) {
-      Navigator.pushNamed(context, '/feed');
+      Navigator.pushNamed(context, '/post');
     } else if (index == 3) {
       Navigator.pushNamed(context, '/notif');
+    } else if (index == 0) {
+      Navigator.pushNamed(context, '/feed');
     }
   }
 }
