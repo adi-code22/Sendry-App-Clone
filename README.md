@@ -1,6 +1,7 @@
 # Instagram-Clone
 
-These are the screens cloned by me in Flutter
+These are the screens cloned by me in Flutter.
+
 
 <img align="left" src="https://github.com/adi-code22/Instagram-Clone/blob/main/files%20clone/splash.jpeg?raw=true" width="200" />
 
